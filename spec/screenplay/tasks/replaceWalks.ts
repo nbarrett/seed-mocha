@@ -23,9 +23,4 @@ export class SelectWalks implements Task {
         });
     }
 
-    sperformAs(actor: PerformsTasks & UsesAbilities): PromiseLike<void> {
-        const indexValues = [0, 4, 2];
-        return actor.attemptsTo(
-            ...indexValues.map(rowIndex => Click.on(RamblersTargets.checkboxSelector(rowIndex))));
-    };
 }

@@ -1,7 +1,7 @@
 {
-  "name": "serenity-js-seed-mocha",
+  "name": "serenity-js-issues",
   "version": "1.0.0",
-  "description": "A starting point for your automated acceptance tests",
+  "description": "Nick's playground for serenity-js issues",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf target",
@@ -14,18 +14,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/serenity-js/seed-mocha.git"
+    "url": "git+https://github.com/nbarrett/serenity-js-issues"
   },
   "keywords": [
     "serenity-js",
     "seed"
   ],
-  "author": "Jan Molak <jan.molak@smartcodeltd.co.uk>",
+  "author": "Nick Barrett",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/serenity-js/seed-mocha/issues"
+    "url": "https://github.com/serenity-js/issues"
   },
-  "homepage": "https://github.com/serenity-js/seed-mocha#readme",
+  "homepage": "https://github.com/serenity-js/#readme",
   "devDependencies": {
     "@types/chai": "4.0.0",
     "@types/underscore": "^1.8.1",
