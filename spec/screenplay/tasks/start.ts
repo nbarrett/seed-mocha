@@ -1,4 +1,5 @@
 import { StartRamblersLogin } from './startRamblersLogin';
+import { StartWalksAndEventsManager } from './startWalksAndEventsManager';
 import { StartWalksProgramme } from './startWalksProgramme';
 
 export class Start {
@@ -9,6 +10,10 @@ export class Start {
 
     static onRamblersLoginPage() {
         return new StartRamblersLogin();
+    }
+
+    static onWalksAndEventsManager() {
+        return new StartWalksAndEventsManager();
     }
 
 }

@@ -16,7 +16,7 @@ exports.config = {
     framework: 'custom',
     frameworkPath: require.resolve('serenity-js'),
 
-    specs: [ 'spec/**/*.spec.ts' ],
+    specs: [ 'spec/**/**.ts' ],
 
     mochaOpts: {
        compiler: 'ts:ts-node/register'

@@ -1,8 +1,7 @@
-import { AnswersQuestions, Interaction, PerformsTasks, TakeNote, Task, UsesAbilities } from 'serenity-js/lib/screenplay';
+import { PerformsTasks, Task, UsesAbilities } from 'serenity-js/lib/screenplay';
 import { Click } from 'serenity-js/lib/serenity-protractor';
 import { contains } from 'underscore';
-import { RamblersWalkSummaries, RamblersWalkSummary } from '../questions/ramblersWalksFound';
-import { RamblersTargets } from '../ui/ramblersTargets';
+import { RamblersWalkSummaries } from '../questions/ramblersWalksFound';
 
 export class SelectWalks implements Task {
 
@@ -17,8 +16,8 @@ export class SelectWalks implements Task {
     performAs(actor: PerformsTasks & UsesAbilities): PromiseLike<void> {
         return RamblersWalkSummaries.displayed().answeredBy(actor).then(walks => {
             return actor.attemptsTo(
-                ...walks.map(walk =>
-                    Click.on(walk.checkboxTarget)));
+                ...walks.filter(walk => contains(this.walkIds, walk.walkId)).map(
+                    walk => Click.on(walk.checkboxTarget)));
 
         });
     }

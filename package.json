@@ -39,9 +39,10 @@
     "npm-failsafe": "^0.2.1",
     "protractor": "5.1.2",
     "serenity-cli": "^0.2.4",
-    "serenity-js": ">= 1.7.0",
+    "serenity-js": "1.7.0",
     "ts-node": "3.0.6",
     "tslint": "5.4.3",
+    "tslint-microsoft-contrib": "4.0.0",
     "typescript": "2.3.4",
     "underscore": "^1.8.1",
     "underscore.string": "~2.3.3"
