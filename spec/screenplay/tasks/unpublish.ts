@@ -23,7 +23,6 @@ export class Unpublish implements Task {
             Click.on(RamblersTargets.unPublishSelected)).catch(e => {
             console.log('exception thrown', e);
             return actor.attemptsTo(
-                Click.on(RamblersTargets.unPublishSelected),
                 WaitForAlert.toBePresent(),
                 Alert.accept());
         });
