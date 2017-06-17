@@ -14,7 +14,7 @@ const equals = expected => actual => expect(actual).to.eventually.eql(expected);
 describe('Walks and Events Manager', function () {
     this.timeout(150 * 1000);
     const stage = serenity.callToStageFor(new Public());
-    const actor = stage.theActorCalled('nonLoggedIn');
+    const actor = stage.theActorCalled('Rambling Nick');
 
     describe('Login', () => {
         it('allows navigation to walks and events manager', () => actor.attemptsTo(
